@@ -44,7 +44,7 @@
       <div>
         <h1>Víctor Hugo Yáñez Chavarría</h1>
         <h2 class="cabecera">Junior Software Engineer</h2>
-        <p class="presentacion">+7 años de experiencia en tecnología.</p>
+        <p class="presentacion"><span class="years-of-expertise">+7</span> años de experiencia en tecnología.</p>
         <p>
           Participado en ciclo de vida del desarrollo de software, desde el
           diseño hasta la implementación y el mantenimiento, enfocándome en el
@@ -86,7 +86,7 @@
             <p>
               Jefe de Proyectos Implementaciones <i><b>Falabella</b></i>
               <br />
-              <b>Desde:</b> <time datetime="2016-01-01">Ene 2014</time> -
+              <b>Desde:</b> <time datetime="2016-01-01" class="inicio">Ene 2014</time> -
               <b>Hasta:</b> Ene 2019
             </p>
           </li>
@@ -94,9 +94,9 @@
         <hr />
         <h2>Portafolio</h2>
         <ul>
-          <li>Mi Primer CV</li>
+          <li><a href="https://victor-yanez-chavarria.github.io/portfolio/" target="_blank">Mi Primer CV</a></li>
           <br />
-          <li>Mi Landing</li>
+          <li><a href="https://victor-yanez-chavarria.github.io/landing/" target="_blank">Mi Landing</a></li>
           <br />
           <li>Flexbox</li>
           <br />
@@ -163,5 +163,13 @@
         ><i class="fa-brands fa-github"></i
       ></a>
     </footer>
+    <script>
+      const [, year] = document.querySelector(".inicio").textContent.split(" ");
+      const numYear = Number(year);
+      const now = new Date();
+      const years = now.getFullYear() - numYear;
+
+      document.querySelector(".years-of-expertise").textContent = years
+    </script>
   </body>
 </html>
