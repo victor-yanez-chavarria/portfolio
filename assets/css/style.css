@@ -66,6 +66,9 @@ a, a:link, a:visited {
 .flex{
     display: flex;
 }
+.modPedro{
+    text-align: center;
+}
 
 footer{
     text-align: center;
@@ -76,11 +79,11 @@ h2{
 }
 
 .cabecera{
-    text-align: left;
+    text-align: justify;
 }
 
 .presentacion{
-    text-align: justify;
+    text-align: left;
 }
 
 .icon1{
